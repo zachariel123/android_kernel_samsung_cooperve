@@ -1,0 +1,1 @@
+cmd_fs/configfs/configfs.o := /home/bieltv3/android/source/galaxy_ace_i/cm-7.2/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o fs/configfs/configfs.o fs/configfs/inode.o fs/configfs/file.o fs/configfs/dir.o fs/configfs/symlink.o fs/configfs/mount.o fs/configfs/item.o 

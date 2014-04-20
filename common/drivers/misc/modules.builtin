@@ -1,0 +1,6 @@
+kernel/drivers/misc/taos.ko
+kernel/drivers/misc/yas_mag_kernel_driver.ko
+kernel/drivers/misc/yas_acc_kernel_driver.ko
+kernel/drivers/misc/yas_ori_kernel_driver.ko
+kernel/drivers/misc/max8986-audio.ko
+kernel/drivers/misc/max8986-muic.ko

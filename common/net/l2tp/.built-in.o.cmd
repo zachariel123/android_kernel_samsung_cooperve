@@ -1,0 +1,1 @@
+cmd_net/l2tp/built-in.o :=  /home/bieltv3/android/source/galaxy_ace_i/cm-7.2/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o net/l2tp/built-in.o net/l2tp/l2tp_core.o net/l2tp/l2tp_ppp.o 
