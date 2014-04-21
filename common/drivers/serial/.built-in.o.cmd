@@ -1,1 +1,0 @@
-cmd_drivers/serial/built-in.o :=  /home/bieltv3/android/source/galaxy_ace_i/cm-7.2/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/serial/built-in.o drivers/serial/serial_core.o drivers/serial/8250.o drivers/serial/brcm_bt_lpm.o drivers/serial/8250_early.o 

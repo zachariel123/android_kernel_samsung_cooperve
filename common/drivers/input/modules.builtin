@@ -1,9 +1,0 @@
-kernel/drivers/input/input-core.ko
-kernel/drivers/input/evdev.ko
-kernel/drivers/input/keyreset.ko
-kernel/drivers/input/misc/uinput.ko
-kernel/drivers/input/misc/ponkey-max8986.ko
-kernel/drivers/input/touchscreen/melfas_ts_mms128_tasscooper.ko
-kernel/drivers/input/touchscreen/mcs8000_download_tasscooper.ko
-kernel/drivers/input/touchscreen/mms100_ISC_download_tasscooper.ko
-kernel/drivers/input/touchscreen/synaptics_i2c_rmi_tma340_cooperve.ko
