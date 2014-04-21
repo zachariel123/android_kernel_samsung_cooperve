@@ -2,9 +2,9 @@ BCM21553 common Kernel
 ======================
 
 New project started by BroadcomCM organisation. This project is based on the final port of a common kernel capable of running on mainly 3 devices:
-	- Galaxy Ace i - s5830i
-	- Galaxy Mini i - s5570i
-	- Galaxy Y - s5360
+	- Galaxy Ace i, s5830i
+	- Galaxy Mini i, s5570i
+	- Galaxy Y, s5360
 
 **This project is really WIP.**
 
