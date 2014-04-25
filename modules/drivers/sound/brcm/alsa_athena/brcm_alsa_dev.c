@@ -1150,6 +1150,9 @@ BCMPCG_ioctl(struct inode *inode, struct file *file,
 #elif CONFIG_BOARD_COOPERVE            
 		   int var_hsgain[16]={20/*0*/,20/*1*/,20/*2*/,20/*3*/,20/*4*/,20/*5*/,20/*6*/,20/*7*/,21/*8*/,23/*9*/,\
 		   					24/*10*/,25/*11*/,26/*12*/,27/*13*/,28/*14*/,29/*15*/};
+#elif CONFIG_BOARD_TOTORO
+		   int var_hsgain[16]={21/*0*/,21/*1*/,21/*2*/,21/*3*/,21/*4*/,21/*5*/,21/*6*/,21/*7*/,22/*8*/,23/*9*/,\
+		   					24/*10*/,25/*11*/,26/*12*/,27/*13*/,29/*14*/,31/*15*/};
 #endif	
 		   audioMode = AUDCTRL_GetAudioMode();
 

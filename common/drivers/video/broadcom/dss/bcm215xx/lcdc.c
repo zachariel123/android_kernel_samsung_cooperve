@@ -50,7 +50,7 @@ static struct cpufreq_client_desc *lcdc_client;
 int gInitialized;
 EXPORT_SYMBOL(gInitialized);
 
-#if 1	//COOPERVE_TEST
+#ifdef CONFIG_BOARD_COOPERVE	//COOPERVE_TEST
 struct class *lcd_class_manual_control;
 EXPORT_SYMBOL(lcd_class_manual_control);
 struct device *lcd_dev_manual_control;
@@ -92,7 +92,7 @@ void display_black_background(void);
 static int __init lcdc_probe(struct platform_device *pdev);
 static int lcdc_remove(struct platform_device *pdev);
 
-#if 1	//COOPERVE_TEST
+#ifdef CONFIG_BOARD_COOPERVE	//COOPERVE_TEST
 static ssize_t lcd_manual_write_cmd(struct device *dev, struct device_attribute *attr, const char *buf,size_t size);
 #endif
 #ifdef CONFIG_BRCM_KPANIC_UI_IND
@@ -123,7 +123,7 @@ static CSL_LCDC_PAR_CTRL_T busCfg;
 
 #define ON  1
 #define OFF 0
-#if 1//COOPERVE_TEST
+#ifdef CONFIG_BOARD_COOPERVE//COOPERVE_TEST
 static DEVICE_ATTR(lcdcmd, S_IRUGO | S_IWUSR | S_IWGRP, NULL, lcd_manual_write_cmd);
 #endif
 
@@ -918,7 +918,7 @@ static int lcd_color_depth_show(struct device *dev, struct device_attribute *att
 // LCD color depth information
 static DEVICE_ATTR(lcd_color_depth, 0664, lcd_color_depth_show, NULL);
 
-#if 1	//COOPERVE_TEST
+#ifdef CONFIG_BOARD_COOPERVE	//COOPERVE_TEST
 static ssize_t lcd_manual_write_cmd(struct device *dev, struct device_attribute *attr, const char *buf,size_t size)
 {
 	char *after;
@@ -987,7 +987,7 @@ static int __init lcdc_probe(struct platform_device *pdev)
 	err = device_create_file(&(pdev->dev), &dev_attr_lcd_color_depth);
 	if (err < 0)
 		dev_err(&pdev->dev, "%s failed to add entries\n");
-#if 1	//COOPERVE_TEST
+#ifdef CONFIG_BOARD_COOPERVE	//COOPERVE_TEST
 	lcd_class_manual_control = class_create(THIS_MODULE, "lcd_dev");
 	if (IS_ERR(lcd_class_manual_control))
 		pr_err("[LCD] Failed to create class(lcd_dev)!\n");
